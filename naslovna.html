@@ -340,35 +340,40 @@
             circular: false,
             start: 0
         });
-        $("#naslovna").click(function () {
+        $("#naslovna").click(function (e) {
+            e.preventDefault();
             $("#autor_").css('display', 'none');
             $("#izlozbe_").css('display', 'none');
             $("#galerija_").css('display', 'none');
             $("#kontakt_").css('display', 'none');
             $("#naslovna_").css('display', 'inline');
         });
-        $("#autor").click(function () {
+        $("#autor").click(function (e) {
+            e.preventDefault();
             $("#autor_").css('display', 'inline');
             $("#izlozbe_").css('display', 'none');
             $("#galerija_").css('display', 'none');
             $("#kontakt_").css('display', 'none');
             $("#naslovna_").css('display', 'none');
         });
-        $("#izlozbe").click(function () {
+        $("#izlozbe").click(function (e) {
+            e.preventDefault();
             $("#autor_").css('display', 'none');
             $("#izlozbe_").css('display', 'inline');
             $("#galerija_").css('display', 'none');
             $("#kontakt_").css('display', 'none');
             $("#naslovna_").css('display', 'none');
         });
-        $("#galerija").click(function () {
+        $("#galerija").click(function (e) {
+            e.preventDefault();
             $("#autor_").css('display', 'none');
             $("#izlozbe_").css('display', 'none');
             $("#galerija_").css('display', 'inline');
             $("#kontakt_").css('display', 'none');
             $("#naslovna_").css('display', 'none');
         });
-        $("#kontakt").click(function () {
+        $("#kontakt").click(function (e) {
+            e.preventDefault();
             $("#autor_").css('display', 'none');
             $("#izlozbe_").css('display', 'none');
             $("#galerija_").css('display', 'none');
